@@ -1,0 +1,259 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Updated CSS for desktop view with space on both sides */
+.Custom {
+  position: relative;
+  padding: 20px 50px; /* Adjust padding to add space on left and right */
+  text-align: center;
+  color: white;
+  background-image: url('image/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+}
+
+.Custom .title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Custom h3 {
+  font-size: 24px;
+  color: white;
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+  flex-grow: 1;
+  margin-top: 50px;
+}
+
+.Custom h5 {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+}
+
+.Buttons {
+  padding: 100px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-button {
+  width: 40px;
+  height: 40px;
+  margin: 0 1px; /* Add space on both sides */
+  border: 1px solid #181717;
+  border-radius: 4px;
+  background-color: #fff; /* Default button color */
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.item-col {
+  width: calc(50% - 100px); /* 25% width for each column with a margin of 20px */
+  padding: 10px;
+  margin: 0 80px; /* Add space on both sides */
+}
+
+
+.square-button {
+  background-color: rgb(53, 54, 53); /* Change to green on hover */
+  color: #fff; /* Change text color to white on hover */
+}
+
+.square-button:hover {
+  background-color: rgb(204, 38, 38); /* Change to red when button is clicked */
+  color: #fff; /* Change text color to white when button is clicked */
+}
+.square-button:active,
+.square-button.selected {
+  background-color: rgb(240, 232, 232); /* Change to red when button is clicked or selected */
+  color: #161515; /* Change text color to white when button is clicked or selected */
+}
+
+.list-heading {
+  margin: 0 80px;
+  color: #c72626; /* Change color for the heading */
+  margin-bottom: 30px; /* Example: Add margin at the bottom */
+  text-align: left; /* Align the heading to the left */
+  font-weight: bold;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.item-col {
+  width: calc(25% - 10px); /* 25% width for each column with a margin of 10px */
+  padding: 10px;
+}
+
+.icon-box {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #d13c3c;
+  border: 2px solid #d13c3c; /* Change color as needed */
+  border-radius: 4px;
+  margin-right: 8px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.icon {
+  color: #ebdbdb; /* Change color as needed */
+  font-size: 16px;
+}
+
+.item-text {
+  color: #d13c3c; /* Change color as needed */
+}
+
+
+
+/* Updated CSS for mobile view */
+@media only screen and (max-width: 600px) {
+  .Custom {
+    height: 200px;
+    padding: 30px;
+    background-image: url('image/background\ -mobileview.jpg');
+  }
+
+  .Custom h3 {
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: left;
+  }
+
+  .Custom h5 {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .Buttons {
+    padding: 10px;
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+  }
+
+  .square-button {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .list-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .items-container {
+    max-width: 100%; /* Set max width to 100% */
+    overflow: hidden; /* Hide any content that overflows */
+    white-space: nowrap; /* Prevent items from wrapping */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+  }
+
+  .item-col {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px; /* Add space between items */
+    white-space: normal; /* Allow text wrap within items */
+  }
+
+  .item-text {
+    color: #d13c3c;
+    font-size: 14px;
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+
+  @media only screen and (max-width: 600px) {
+
+     
+  .Custom {
+    height: 150px;
+    padding: 30px;
+    background-image: url('image/background\ -mobileview.jpg');
+    }
+  
+    .Custom h3 {
+      font-size: 30px;
+      margin-top: 100px;
+      text-align: left;
+    }
+  
+    .Custom h5 {
+      font-size: 10px;
+      text-align: left;
+    }
+    .Buttons {
+      padding: 10px;
+    }
+  
+    .square-button {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+      margin: 5px;
+    }
+  
+    .list-heading {
+      text-align: left; /* Align list heading to the left */
+      margin-left: 10px; /* Add some left margin to the heading */
+    }
+  
+    .item-row {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap */
+      justify-content: flex-start; /* Align items to the left */
+    }
+  
+    .item-col {
+      width: 100%; /* Full width for each column in mobile view */
+      margin-bottom: 10px; /* Add margin bottom for item spacing */
+      text-align: left; /* Align text to the left */
+      padding-left: 10px; /* Add left padding for better spacing */
+    }
+  
+    .icon-box {
+      display: inline-block; /* Display icons inline */
+      width: 15px;
+      height: 15px;
+      background-color: #d13c3c;
+      border: 2px solid #d13c3c; /* Change color as needed */
+      border-radius: 4px;
+      margin-right: 8px;
+      text-align: center;
+      line-height: 15px;
+    }
+  
+    .icon {
+      color: #ebdbdb; /* Change color as needed */
+      font-size: 16px;
+    }
+  
+    .item-text {
+      color: #d13c3c; /* Change color as needed */
+      margin-left: 5px;
+    }
+  }
+}  
